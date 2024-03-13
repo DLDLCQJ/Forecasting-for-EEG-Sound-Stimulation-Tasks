@@ -91,10 +91,8 @@ class Exp_Main(Exp_Basic):
                 outputs = _run_model()
         else:
             outputs = _run_model()
-        if self.flag=='pred':
-            batch_y = None
-        else:
-            batch_y = batch_y[:,-self.args.pred_len:, :].to(self.device)
+
+        batch_y = batch_y.to(self.device)
         return outputs, batch_y
 
     def vali(self, vali_loader, criterion):
