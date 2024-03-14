@@ -7,9 +7,7 @@ Our ultimate goal is to employ deep learning techniques for long-term time serie
 The EEG dataset, which includes data from three distinct stimulation tasks, is subjected to careful preprocessing to ensure its suitability for training purposes.
 
 ## GRU model for EEG data forecasting.
-We propose a simple RNN model that is based on GRU model, which not only can capture the complex time dependences of those features across time. 
-
-<img width="170" alt="image" src="https://github.com/DLDLCQJ/Forecasting-for-EEG-Sound-Stimulation-Tasks/assets/145650040/f0c9728e-8bdf-4da9-b4ce-cde7e712d645">
+We propose a classical RNN model that is based on GRU model, which can capture the dynamic time dependences of time-sequence features across time. 
 
 #### Note:
 The pipeline contains train-val-test or train-val-reference processes. The users can take one way depend on your task.
